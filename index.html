@@ -1,122 +1,165 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="./assets/css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+	<link href="./assets/css/style.css" rel="stylesheet"></link>
 </head>
 
 <body>
 	<!-- menu bar start -->
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-				<div class="menu-left"><img src="./assets/images/birilaGroup.png" />
-				</div>
-				<div class="menu-center">
-					Encore Aditya Birla Group Bengaluru , Mumbai
-				</div>
-				<div class="menu-right"><img src="./assets/images/encore.png" />
-				</div>
+			<div class="container">
+					<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+							<a class="menu-left" href="/"><img src="./assets/images/birilaGroup.png" />
+							</a>
+							<div class="menu-center">
+									Encore Aditya Birla Group Bengaluru , Mumbai
+							</div>
+							<a class="menu-right" href="/"><img src="./assets/images/encore.png" />
+							</a>
+					</div>
+					<div class="hide-menu" style="height: 1px;">
+							<div class="menu-center">
+									Encore Aditya Birla Group Bengaluru , Mumbai
+							</div>
+					</div>
+					<!--/.nav-collapse -->
 			</div>
-			<div class="hide-menu" style="height: 1px;">
-				<div class="menu-center">
-					Encore Aditya Birla Group Bengaluru , Mumbai
-				</div>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
 	</nav>
 	<!-- menu bar end -->
 	<div class="main-container container">
+		<!-- top button container start  -->
+		<div class="row">
+			<div class="col-sm-12 btn-grp">
+				<!-- Small button group -->
+				<a class="btn btn-primary btn-sm" type="button">
+					APPLY NOW <span class="glyphicon glyphicon-menu-right"></span>
+				</a>
+				<a class="btn btn-success btn-sm" type="button">
+					REQUEST INFO <span class="glyphicon glyphicon-menu-right"></span>
+				</a>
+			</div>
+		</div>
+		<!-- top button container end  -->
+		<!-- Large thumbnail start-->
 		<div class="row">
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
+				<a class="thumbnail" href="/program-overview.html">
 					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
 					<div class="caption">
 						<h3>Program overview </h3>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<!-- <div class="embed-responsive embed-responsive-4by3">
-						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
-					</div> -->
-					<div class="cover" style="background-image: url('./assets/images/apply.png')"></div>
+				<a class="thumbnail" href="/organization-overview.html">
+					<div class="cover" style="background-image: url('http://img.youtube.com/vi/eJFEpixMIb4/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
 					<div class="caption">
 						<h3>Organization overview </h3>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
+				<a class="thumbnail" href="/who-can-apply.html">
 					<div class="cover" style="background-image: url('./assets/images/apply.png')"></div>
 					<div class="caption">
 						<h3>Who can apply? </h3>
 					</div>
+				</a>
+			</div>
+		</div>
+		<!--Large thumbnail end -->
+		<!-- Small thumbnail start-->
+		<div class="row">
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<!-- http://img.youtube.com/vi/foD3N2QxqMk/mqdefault.jpg -->
+					<!-- foD3N2QxqMk is video id. This is enough to change new video thumbnail -->
+					<div class="cover" data-id="foD3N2QxqMk" style="background-image: url('http://img.youtube.com/vi/foD3N2QxqMk/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Manisha Verma</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<div class="cover" data-id="eJFEpixMIb4" style="background-image: url('http://img.youtube.com/vi/eJFEpixMIb4/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Rtika chopra</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<div class="cover" data-id="foD3N2QxqMk" style="background-image: url('http://img.youtube.com/vi/foD3N2QxqMk/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Manisha Verma</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<div class="cover" data-id="eJFEpixMIb4" style="background-image: url('http://img.youtube.com/vi/eJFEpixMIb4/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Rtika chopra</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<div class="cover" data-id="foD3N2QxqMk" style="background-image: url('http://img.youtube.com/vi/foD3N2QxqMk/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Manisha Verma</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-sx-12 col-sm-4 col-md-2">
+				<div class="thumbnail sml-thumbnail" data-toggle="modal" data-target="#myModal">
+					<div class="cover" data-id="eJFEpixMIb4" style="background-image: url('http://img.youtube.com/vi/eJFEpixMIb4/mqdefault.jpg')">
+						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+					</div>
+					<div class="caption">
+						<h3>Rtika chopra</h3>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Head thumbnail image end -->
-		<div class="row">
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
-					</div>
+		<!-- Small thumbnail end-->
+	</div>
+	<!-- Modal Popup start-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalHead">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="modalHead"></h4>
 				</div>
-			</div>
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-2">
-				<div class="thumbnail sml-thumbnail">
-					<!-- <img src="http://img.youtube.com/vi/LmdT2zhFmn4/mqdefault.jpg" alt="LmdT2zhFmn4"> -->
-					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
-					<div class="caption">
-						<h3>Program overview </h3>
+				<div class="modal-body">
+					<!-- 4:3 aspect ratio -->
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" id="videoPopup" src="" allowfullscreen=""></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Modal Popup end-->
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 
 </html>
