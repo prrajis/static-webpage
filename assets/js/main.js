@@ -9,4 +9,7 @@ $(function() {
     var URL = "//www.youtube.com/embed/"+getDataId+"?rel=0&autoplay=0";
     $('#videoPopup').attr('src', URL);
   });
+  $('.full-view-modal').find('.modal-body .container').prepend(
+    $("<div>", {"class": "row"}).html($('#applyNowContainer').html())
+  );
 });

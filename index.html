@@ -2,35 +2,30 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
 	<link href="./assets/css/style.css" rel="stylesheet"></link>
+	<link href="./assets/css/bootstrap.css" rel="stylesheet"></link>
 </head>
 
 <body>
 	<!-- menu bar start -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-					<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-							<a class="menu-left" href="/"><img src="./assets/images/birilaGroup.png" />
-							</a>
-							<div class="menu-center">
-									Encore Aditya Birla Group Bengaluru , Mumbai
-							</div>
-							<a class="menu-right" href="/"><img src="./assets/images/encore.png" />
-							</a>
-					</div>
-					<div class="hide-menu" style="height: 1px;">
-							<div class="menu-center">
-									Encore Aditya Birla Group Bengaluru , Mumbai
-							</div>
-					</div>
-					<!--/.nav-collapse -->
+	<div class="container nav-container">
+		<div class="navbar-default">
+			<div class="">
+				<img class="f-l" src="./assets/images/birilaGroup.png" />
 			</div>
-	</nav>
+			<div class="menu-center">
+				Encore Aditya Birla Group Bengaluru , Mumbai
+			</div>
+			<div class="">
+				<img class="f-r" src="./assets/images/encore.png" />
+			</div>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
 	<!-- menu bar end -->
-	<div class="main-container container">
+	<div class="container">
 		<!-- top button container start  -->
-		<div class="row">
+		<div class="row" id="applyNowContainer">
 			<div class="col-sm-12 btn-grp">
 				<!-- Small button group -->
 				<a class="btn btn-primary btn-sm" type="button">
@@ -45,33 +40,34 @@
 		<!-- Large thumbnail start-->
 		<div class="row">
 			<div class="col-sm-6 col-md-4">
-				<a class="thumbnail" href="/program-overview.html">
+				<div class="thumbnail" data-toggle="modal" data-target="#programOverViewModal">
 					<div class="cover" style="background-image: url('./assets/images/overview.png')"></div>
 					<div class="caption">
 						<h3>Program overview </h3>
 					</div>
-				</a>
+				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
-				<a class="thumbnail" href="/organization-overview.html">
+			<div class="col-sm-6 col-md-4" data-toggle="modal" data-target="#overViewModal">
+				<div class="thumbnail">
 					<div class="cover" style="background-image: url('http://img.youtube.com/vi/eJFEpixMIb4/mqdefault.jpg')">
 						<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
 					</div>
 					<div class="caption">
 						<h3>Organization overview </h3>
 					</div>
-				</a>
+				</div>
 			</div>
 			<div class="col-sm-6 col-md-4">
-				<a class="thumbnail" href="/who-can-apply.html">
+				<div class="thumbnail" data-toggle="modal" data-target="#whoCanApplyModal">
 					<div class="cover" style="background-image: url('./assets/images/apply.png')"></div>
 					<div class="caption">
 						<h3>Who can apply? </h3>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 		<!--Large thumbnail end -->
+
 		<!-- Small thumbnail start-->
 		<div class="row">
 			<div class="col-sx-12 col-sm-4 col-md-2">
@@ -156,9 +152,136 @@
 			</div>
 		</div>
 	</div>
-	<!-- Modal Popup end-->
+	<!-- org overview modal start -->
+	<div class="modal fade full-view-modal" id="overViewModal" tabindex="-1" role="dialog" aria-labelledby="modalHead">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Organization overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<!-- left part start-->
+						<div class="col-sx-12 col-sm-7 col-md-4">
+							<!-- 4:3 aspect ratio -->
+							<div class="embed-responsive embed-responsive-4by3 m-b-20">
+								<iframe class="embed-responsive-item" src="//www.youtube.com/embed/eJFEpixMIb4?rel=0" allowfullscreen="true"></iframe>
+							</div>
+						</div>
+						<!-- left part end-->
+						<!-- right part -->
+						<div class="col-sx-12 col-sm-12 col-md-8">
+							<div class="detail-content">
+								<div class="row">
+									A US $40 bfadeillion corporation, the Aditya Birla Group is in the league of Fortune 500 companies. It
+									is anchored by an extraordinary force of over 120,000 employees belonging to 42 nationalities.
+									The Group has been ranked No. 4 in the global 'Top Companies for Leaders' survey and ranked
+									No. 1 in the Asia Pacific for 2011. 'Top Companies for Leaders' is the most comprehensive study
+									of organisational leadership in the world conducted by Aon Hewitt, Fortune Magazine, and RBL
+									(a strategic HR and Leadership Advisory firm).
+								</div>
+								<div class="row">
+									Over 50 percent of the Aditya Birla Group's revenues flow from its overseas operations. The Group operates
+									in 35 countries - Australia, Austria, Bangladesh, Brazil, Canada, China, Egypt, France, Germany,
+									India, Indonesia, Italy, Ivory Coast, Japan, Korea, Laos, Luxembourg, Malaysia, Myanmar, Philippines,
+									Poland, Russia, Singapore, South Africa, Spain, Sri Lanka, Sweden, Switzerland, Tanzania, Thailand,
+									Turkey, UAE, UK, USA, and Vietnam.
+								</div>
+							</div>
+						</div>
+						<!-- right end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- org overview modal end -->
+	<!-- program-overview modal start -->
+	<div class="modal fade full-view-modal" id="programOverViewModal" tabindex="-1" role="dialog" aria-labelledby="modalHead">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Program overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<!-- left part start-->
+						<div class="col-sx-12 col-sm-12 col-md-4">
+							<div class="detail-img" style="background-image: url('./assets/images/overview.png')"></div>
+						</div>
+						<!-- left part end-->
+						<!-- right part -->
+						<div class="col-sx-12 col-sm-12 col-md-8">
+							<div class="detail-content">
+								<div class="row">
+									<strong>Encore’ – official Comeback program for women on career breaks by
+                        ADITYA BIRLA GROUP.</strong> The intent of the program is to provide
+									mutually rewarding work opportunities to qualified Indian women who are out of the workforce
+									due to various reasons.
+								</div>
+								<div class="row">
+									Encore’ offers <strong>live projects</strong> with flexible workplace arrangements wherever
+									possible where the participants use their expertise to solve real business problems. You will
+									work closely with the <strong>project sponsors</strong> of the identified projects who will
+									also be their mentors during the course of the project.
+								</div>
+								<div class="row">
+									The program is an effective interim platform that enables you to <strong>slowly transition
+                back into a workplace environment.</strong> The participants can also subsequently look
+									at exploring possible full-time work opportunities across ABG's Apparel & Retail businesses
+									in consultation with their project mentors.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- right end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- program-overview modal end -->
+	<!-- who-can-apply modal start -->
+	<div class="modal fade full-view-modal" id="whoCanApplyModal" tabindex="-1" role="dialog" aria-labelledby="modalHead">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Who can apply?</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<!-- left part start-->
+						<div class="col-sx-12 col-sm-12 col-md-4">
+							<div class="detail-img" style="background-image: url('./assets/images/apply.png')"></div>
+						</div>
+						<!-- left part end-->
+						<!-- right part -->
+						<div class="col-sx-12 col-sm-12 col-md-8">
+							<div class="detail-content">
+								<div class="row">
+									Women who meet all of the following criteria are eligible to apply for the Program:
+								</div>
+								<div class="row">
+									<ul>
+										<li>Post-graduation or relevant equivalent technical qualifications</li>
+										<li>Minimum work experience of two years</li>
+										<li>Not more than 45 years of age</li>
+										<li>Career gap of at least one year</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- right end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- who-can-apply modal end -->
 	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./assets/js/bootstrap.js"></script>
 	<script src="./assets/js/main.js"></script>
 </body>
 
